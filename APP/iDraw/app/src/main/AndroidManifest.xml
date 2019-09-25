@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.edrawcompany.edraw">
+    <!--Se configuran los parámetros básicos de la app, como el nombre (iDraw), o el icono a mostrar(android:icon) -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="iDraw"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Bluetooth">
+
+
+        </activity>
+        <activity android:name=".main_Activity">
+
+        </activity>
+        <activity android:name=".Pantalla_principal"> <!--Se inicializa primero esta actividad -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>      <!-- Se otorgan permisos de Bluetooth a la App-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+</manifest>

@@ -1,0 +1,5 @@
+{
+    "programmer": "ArduinoISP",
+    "board": "arduino:avr:uno",
+    "sketch": "CONTROL\\Codigo\\PRUEBA\\PRUEBA.ino"
+}
